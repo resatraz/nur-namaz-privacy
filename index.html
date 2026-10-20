@@ -18,6 +18,8 @@
     li { margin-bottom: 6px; }
     .footer { text-align: center; color: #888; font-size: 13px; margin-top: 40px; }
     .badge { display: inline-block; background: #e8f5e9; color: #2E7D32; padding: 4px 12px; border-radius: 20px; font-size: 13px; margin-top: 8px; }
+    .lang { display: inline-block; margin-top: 12px; color: white; font-size: 13px; text-decoration: underline; opacity: 0.9; }
+    .lang:hover { opacity: 1; }
   </style>
 </head>
 <body>
@@ -51,7 +53,9 @@
     <ul>
       <li>Kişisel kimlik bilgileri (ad, e-posta, telefon numarası)</li>
       <li>Ödeme veya finansal bilgiler</li>
-      <li>Cihaz kimliği veya reklam kimliği (henüz reklam yok)</li>
+      <li>Kişisel ad, e-posta adresi veya telefon numarası</li>
+      <li>Ödeme veya finansal bilgi</li>
+      <li>Konum bilgisi (yalnızca cihazınızda hesaplanır, sunucuya gönderilmez)</li>
       <li>Kullanım istatistikleri veya analitik veriler</li>
     </ul>
   </div>
@@ -63,6 +67,8 @@
       <li><strong>Aladhan API:</strong> Namaz vakitleri hesaplaması için. Yalnızca konum koordinatları gönderilir.</li>
       <li><strong>GitHub (raw.githubusercontent.com):</strong> Uygulama içi içerik (hadis, dua, radyo kanalları) için kullanılır.</li>
       <li><strong>Radyo & TV yayınları:</strong> Canlı yayın için ilgili yayın sunucularına bağlanılır.</li>
+      <li><strong>Google AdMob:</strong> Uygulama içinde gösterilen reklamlar için. Reklam kimliği (IDFA) yalnızca kişiselleştirilmiş reklam gösteriminde kullanılır.</li>
+      <li><strong>Firebase Crashlytics:</strong> Uygulama çökmelerini tespit etmek ve düzeltmek için hata raporları toplanır.</li>
     </ul>
   </div>
 

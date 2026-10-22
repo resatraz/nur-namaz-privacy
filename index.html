@@ -27,7 +27,7 @@
 <header>
   <h1>🕌 Nur Namaz Programı</h1>
   <p>Gizlilik Politikası</p>
-  <span class="badge">Son güncelleme: Haziran 2026</span>
+  <span class="badge">Son güncelleme: Ekim 2026</span>
 </header>
 
 <div class="container">
@@ -44,6 +44,7 @@
       <li><strong>Konum bilgisi:</strong> Namaz vakitleri ve kıble yönü hesaplaması için yalnızca uygulama açıkken konum erişimi kullanılır. Bu bilgi cihazınızda kalır, sunucularımıza gönderilmez.</li>
       <li><strong>Bildirim izni:</strong> Ezan vakitleri, günün ayeti ve kandil günleri bildirimleri için kullanılır.</li>
       <li><strong>Yerel depolama:</strong> Şehir seçimi, tema ve ayarlar cihazınızda SharedPreferences ile saklanır.</li>
+      <li><strong>Dua istekleri:</strong> "Dua İsteme" bölümünden gönderdiğiniz dua metni, girdiğiniz kullanıcı adı (isteğinize bağlı olarak "Anonim") ve anonim bir cihaz kimliği; diğer kullanıcılar görebilsin ve "Amin" diyebilsin diye Google Firebase sunucularında saklanır.</li>
     </ul>
   </div>
 
@@ -53,7 +54,6 @@
     <ul>
       <li>Ad-soyad, e-posta adresi veya telefon numarası gibi kimlik bilgileri</li>
       <li>Ödeme bilgileri</li>
-      <li>Reklam amaçlı kullanım istatistikleri veya analitik verileri</li>
     </ul>
   </div>
 
@@ -63,7 +63,8 @@
     <ul>
       <li><strong>Aladhan API:</strong> Namaz vakitleri hesaplaması için. Yalnızca konum koordinatları gönderilir.</li>
       <li><strong>GitHub (raw.githubusercontent.com):</strong> Uygulama içi içerik (hadis, dua, radyo kanalları) için kullanılır.</li>
-      <li><strong>Google AdMob:</strong> Uygulama içinde gösterilen reklamlar için. Reklam kimliği (IDFA) yalnızca kişiselleştirilmiş reklam gösteriminde kullanılır.</li>
+      <li><strong>Google AdMob:</strong> Uygulama içinde gösterilen reklamlar için kullanılır. Uygulama, reklam kimliğini (IDFA) kullanmaz; gösterilen reklamlar bulunduğunuz içeriğe göre seçilir.</li>
+      <li><strong>Firebase Firestore:</strong> "Dua İsteme" özelliği için kullanılır. Gönderdiğiniz dua metni, kullanıcı adınız ve anonim cihaz kimliğiniz burada saklanır ve diğer uygulama kullanıcılarına gösterilir.</li>
       <li><strong>Firebase Crashlytics:</strong> Uygulama çökmelerini tespit etmek ve düzeltmek için hata raporları toplar.</li>
       <li><strong>Radyo &amp; TV yayınları:</strong> Canlı yayın için ilgili yayın sunucularına bağlanılır.</li>
     </ul>
@@ -76,7 +77,7 @@
 
   <div class="card">
     <h2>6. Güvenlik</h2>
-    <p>Kullanıcı verileri yalnızca cihazda saklanır ve üçüncü taraflarla paylaşılmaz. Uygulama internet bağlantısını yalnızca namaz vakitleri, içerik güncellemeleri ve canlı yayınlar için kullanır.</p>
+    <p>Ayarlarınız, şehir seçiminiz ve namaz takip bilgileriniz yalnızca cihazınızda saklanır ve üçüncü taraflarla paylaşılmaz. Kendi isteğinizle gönderdiğiniz dua talepleri ise, diğer kullanıcılar görebilsin diye Google Firebase sunucularında tutulur. Çökme raporları yalnızca hataları tespit edip düzeltmek amacıyla Firebase Crashlytics'e gönderilir. Uygulama internet bağlantısını namaz vakitleri, içerik güncellemeleri, dua istekleri ve canlı yayınlar için kullanır.</p>
   </div>
 
   <div class="card">

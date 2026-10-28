@@ -92,11 +92,12 @@
     <p>Uygulama aşağıdaki dış hizmetleri kullanır; her biri kendi gizlilik politikasına tabidir:</p>
     <ul>
       <li><strong>Aladhan API, Diyanet (awqatsalah.diyanet.gov.tr), imsakiyem.com:</strong> Namaz vakitleri ve imsakiye hesaplaması için; yalnızca şehir/koordinat gönderilir.</li>
-      <li><strong>alquran.cloud:</strong> Kur'an-ı Kerim metinleri, Mushaf sayfaları ve Yasin sure sesleri (okuma) için; yalnızca istenen sure/sayfa numarası gönderilir.</li>
+      <li><strong>alquran.cloud:</strong> Kur'an-ı Kerim metinleri, Mushaf sayfaları ve Ayetel Kürsi sesi için; yalnızca istenen sure/sayfa numarası gönderilir.</li>
+      <li><strong>QUD Ses Kütüphanesi (GitHub — mp3quran, tarteel, quranicaudio CDN'leri):</strong> Yasin, Cüz ve Namaz Duaları bölümlerindeki sure sesleri internetten akar; hafız başına ~5 MB zamanlama paketi bir kez iner ve cihazda önbellek olarak saklanır.</li>
+      <li><strong>GitHub Pages (resatraz.github.io):</strong> Namaz Duaları bölümündeki dua sesleri bu statik siteden akar; yalnızca ses dosyası istenir.</li>
       <li><strong>Google Firebase Firestore:</strong> "Dua İsteme" özelliği için kullanılır; gönüllü olarak gönderdiğiniz içerik burada saklanır.</li>
       <li><strong>Google Firebase Crashlytics:</strong> Anonim çökme raporları için kullanılır.</li>
       <li><strong>Google AdMob:</strong> Reklam gösterimi için kullanılır. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google gizlilik politikası</a>.</li>
-      <li><strong>Google Drive (dosya indirme):</strong> Cüz ve Namaz Duaları bölümlerindeki ses dosyaları indirilir; indirme yalnızca ses dosyası almak içindir.</li>
       <li><strong>Quran Foundation (verses.quran.foundation):</strong> Mushaf sayfa görselleri için kullanılır.</li>
       <li><strong>Radyo ve TV yayın sunucuları:</strong> Canlı yayın akışı içindir; yalnızca bağlantı kurulur, izleme kaydı tutulmaz.</li>
       <li><strong>Apple App Store / Google Play bağlantıları:</strong> Uygulamayı puanlama veya diğer uygulamaları açma içindir.</li>

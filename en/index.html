@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nur Adhan Times &amp; Prayer — Privacy Policy</title>
+  <title>Secde Pro — Privacy Policy</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', sans-serif; background: #f5f5f0; color: #333; }
@@ -13,90 +13,151 @@
     .container { max-width: 800px; margin: 40px auto; padding: 0 20px 60px; }
     .card { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
     h2 { color: #2E7D32; font-size: 18px; margin-bottom: 12px; border-bottom: 2px solid #e8f5e9; padding-bottom: 8px; }
+    h3 { color: #444; font-size: 15px; margin: 14px 0 6px; }
     p, li { font-size: 15px; line-height: 1.7; color: #444; }
-    ul { padding-left: 20px; margin-top: 8px; }
+    ul, ol { padding-left: 20px; margin-top: 8px; }
     li { margin-bottom: 6px; }
     .footer { text-align: center; color: #888; font-size: 13px; margin-top: 40px; }
     .badge { display: inline-block; background: #e8f5e9; color: #2E7D32; padding: 4px 12px; border-radius: 20px; font-size: 13px; margin-top: 8px; }
-    .lang { display: inline-block; margin-top: 12px; color: white; font-size: 13px; text-decoration: underline; opacity: 0.9; }
-    .lang:hover { opacity: 1; }
+    .highlight { background: #e8f5e9; border-left: 4px solid #2E7D32; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-top: 12px; }
+    .highlight strong { color: #2E7D32; }
+    a { color: #2E7D32; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>🕌 Nur Adhan Times &amp; Prayer</h1>
+  <h1>🕌 Secde Pro</h1>
   <p>Privacy Policy</p>
-  <span class="badge">Last updated: October 2026</span><br>
-  <a class="lang" href="../">Türkçe</a>
+  <span class="badge">Last updated: October 2026</span>
 </header>
 
 <div class="container">
 
   <div class="card">
-    <h2>1. General Information</h2>
-    <p>The Nur Adhan Times &amp; Prayer app is developed by Mehmet Reşat Raz. This privacy policy explains what information is collected when you use our app and how that information is used.</p>
+    <h2>1. Overview</h2>
+    <p><strong>Secde Pro</strong> (formerly Nur Namaz Programı) is developed by Mehmet Reşat Raz. This page explains, in clear language, what information is handled, why it is processed, and <strong>how you can delete your data</strong>.</p>
+    <p style="margin-top:8px;">No account is required to use the app, and we never ask for your name, email address, or phone number.</p>
   </div>
 
   <div class="card">
-    <h2>2. Information Collected</h2>
-    <p>Our app uses the following information:</p>
+    <h2>2. Information Collected and Processed</h2>
+
+    <h3>a) Location</h3>
+    <p>Location access is used only while the app is open to calculate prayer times and the Qibla direction. Your coordinates are processed on your device; only the selected city or coordinates are sent to the prayer-time providers listed in Section 5, solely to fetch prayer times. Location is not stored on our servers.</p>
+
+    <h3>b) Preferences and local data</h3>
+    <p>Your selected city, theme, font size, and notification/prayer-tracking preferences are stored only on your device (SharedPreferences). The home screen widget stores the same prayer-time information (city name and times) locally in the app's shared container; it is never sent to the internet.</p>
+
+    <h3>c) Notification permission</h3>
+    <p>Used for adhan-time reminders, daily verse, and religious holiday notifications. Notifications are produced on your device; we do not report which notifications you receive.</p>
+
+    <h3>d) Prayer Request feature (user-generated content)</h3>
+    <p>If you voluntarily submit a prayer request, the text, the username you choose (optionally "Anonymous"), and an anonymous device identifier are stored in Google Firebase Firestore so other users can view it and say "Amen." This content is published with your consent and can be deleted at any time (see Section 7).</p>
+
+    <h3>e) Crash reports</h3>
+    <p>Firebase Crashlytics collects anonymous crash reports (OS version, error logs, device model, and similar technical details) to detect and fix bugs. These reports contain no personally identifiable information linked to you.</p>
+
+    <h3>f) Advertisements</h3>
+    <p>The app is free and supported by ads. Google AdMob may process device and advertising information to serve ads. <strong>The app does not use the advertising identifier (IDFA)</strong>; ads are selected based on context (the content you are viewing). You can manage cross-app tracking in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. How Information Is Used</h2>
+    <p>All collected information is used solely to:</p>
     <ul>
-      <li><strong>Location information:</strong> Location access is used only while the app is open, in order to calculate prayer times and the qibla direction. This information stays on your device and is not sent to our servers.</li>
-      <li><strong>Notification permission:</strong> Used for adhan time, verse of the day and religious night notifications.</li>
-      <li><strong>Local storage:</strong> City selection, theme and settings are stored on your device using SharedPreferences.</li>
-      <li><strong>Prayer requests:</strong> The prayer text you submit through the Prayer Request feature, the name you enter (or "Anonymous") and an anonymous device identifier are stored on Google Firebase servers so that other users can see your request and respond to it.</li>
+      <li>Provide prayer times, adhan, imsakiye, and Qibla services</li>
+      <li>Send prayer-time and content notifications</li>
+      <li>Share prayer requests with other users, only when you choose to</li>
+      <li>Detect and fix app crashes</li>
+      <li>Show advertisements that keep the app free</li>
+    </ul>
+    <p style="margin-top:8px;">Your information is never sold, rented, or shared with third parties for marketing purposes without your consent.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Information We Do NOT Collect</h2>
+    <ul>
+      <li>Identity information such as name, email address, or phone number</li>
+      <li>Payment or billing information (the app is free, with no in-app purchases)</li>
+      <li>Precise GPS history or location logs</li>
+      <li>Contacts, photo library, microphone, or camera access</li>
+      <li>Health, religious affiliation, or biometric data</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>3. Information Not Collected</h2>
-    <p>Our app <strong>never collects</strong> the following information:</p>
+    <h2>5. Third-Party Services</h2>
+    <p>The app uses the following external services, each governed by its own privacy policy:</p>
     <ul>
-      <li>Personal identity information such as name, email address or phone number</li>
-      <li>Payment information</li>
+      <li><strong>Aladhan API, Diyanet (awqatsalah.diyanet.gov.tr), imsakiyem.com:</strong> Prayer times and imsakiye calculations; only city/coordinates are sent.</li>
+      <li><strong>alquran.cloud:</strong> Quran texts, Mushaf pages, and Yasin surah audio; only the requested surah/page number is sent.</li>
+      <li><strong>Google Firebase Firestore:</strong> Stores the content you voluntarily submit to the Prayer Request feature.</li>
+      <li><strong>Google Firebase Crashlytics:</strong> Anonymous crash reports.</li>
+      <li><strong>Google AdMob:</strong> Ad delivery. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+      <li><strong>Google Drive (file downloads):</strong> Audio files in the Quran Reciter (Cüz) and Prayer Requests sections; downloads fetch audio files only.</li>
+      <li><strong>Quran Foundation (verses.quran.foundation):</strong> Mushaf page images.</li>
+      <li><strong>Radio and TV streaming servers:</strong> Live broadcasts; only a connection is opened, no viewing log is kept.</li>
+      <li><strong>Apple App Store / Google Play links:</strong> For rating the app or opening other apps.</li>
+    </ul>
+    <p style="margin-top:8px;">The app does not collect personal data via GitHub, our own servers, or any analytics/tracking SDK.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li><strong>Data on your device</strong> (city, preferences, downloaded audio): stays until you delete the app.</li>
+      <li><strong>Prayer Request posts:</strong> stored in Firebase Firestore until you delete them.</li>
+      <li><strong>Crash reports:</strong> anonymous, kept for up to 180 days under Firebase's retention policy.</li>
+      <li><strong>Ad information:</strong> kept for limited periods under Google's own policies.</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>4. Third-Party Services</h2>
-    <p>Our app uses the following third-party services:</p>
+    <h2>7. Deleting Your Data and Your Rights</h2>
+    <p>You are in full control of your data. Use the options below:</p>
+    <ol>
+      <li><strong>Delete all local data:</strong> touch and hold the app icon on your iPhone and tap <em>"Remove App"</em>. Your city selection, preferences, notification settings, and all downloaded files are erased from your device.</li>
+      <li><strong>Delete your Prayer Request content (user data):</strong> email our support address below:
+        <div class="highlight">
+          <strong>Email:</strong> nurserisidestek@gmail.com<br>
+          Subject: "Data deletion request"<br>
+          Please include your in-app username and, if possible, the first few words of the prayer text you submitted.
+        </div>
+        After verification, your content will be deleted <strong>within 30 days at the latest</strong>, and we will confirm by email. This service is free of charge.
+      </li>
+      <li><strong>Other rights</strong> (access, correction, objection, or restriction requests): send them to the same email address; they are resolved within 30 days.</li>
+      <li><strong>Ad tracking:</strong> no extra permission is needed because IDFA is not used; you may still reset cross-app tracking in iOS Settings &gt; Privacy &gt; Security &gt; Tracking.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>8. Children's Privacy</h2>
+    <p>The app does not knowingly collect personal information from children under 13. It offers ad-supported worship and educational content suitable for all ages. If you believe a child has shared personal information with us without your consent, contact us by email and we will remove it promptly.</p>
+  </div>
+
+  <div class="card">
+    <h2>9. Security</h2>
+    <p>Your settings, city selection, and prayer-tracking data are stored only on your device and are not shared with third parties. Prayer requests you submit are transferred to Firebase solely for in-app publication, over encrypted (TLS) connections. Crash reports are sent only for bug fixing. The app uses the internet for prayer times, Quran texts and audio, content updates, prayer requests, and live broadcasts.</p>
+  </div>
+
+  <div class="card">
+    <h2>10. Changes to This Policy</h2>
+    <p>This privacy policy may be updated from time to time. Significant changes will be posted on this page and the "Last updated" date above will be revised. Continuing to use the app constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="card">
+    <h2>11. Contact</h2>
+    <p>For privacy questions, <strong>data deletion requests</strong>, and suggestions:</p>
     <ul>
-      <li><strong>Aladhan API:</strong> Used to calculate prayer times. Only location coordinates are sent.</li>
-      <li><strong>GitHub (raw.githubusercontent.com):</strong> Used for in-app content such as hadith, supplications and radio channels.</li>
-      <li><strong>Google AdMob:</strong> Used for the advertisements shown inside the app. The app does not use the advertising identifier (IDFA); the ads shown are selected based on the content you are viewing.</li>
-      <li><strong>Firebase Firestore:</strong> Used for the Prayer Request feature. The prayer text you submit, your display name and an anonymous device identifier are stored here and are shown to other users of the app.</li>
-      <li><strong>Firebase Crashlytics:</strong> Collects crash reports so that app crashes can be detected and fixed.</li>
-      <li><strong>Radio &amp; TV broadcasts:</strong> Connects to the relevant broadcast servers for live streaming.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>5. Children's Privacy</h2>
-    <p>Our app does not knowingly collect personal data from children under the age of 13. The app provides content suitable for all age groups.</p>
-  </div>
-
-  <div class="card">
-    <h2>6. Security</h2>
-    <p>Your settings, your city selection and your prayer tracking data are stored only on your device and are not shared with third parties. Prayer requests that you voluntarily submit are kept on Google Firebase servers so that other users can see them. Crash reports are sent to Firebase Crashlytics solely to detect and fix problems. The app uses its internet connection for prayer times, content updates, prayer requests and live broadcasts.</p>
-  </div>
-
-  <div class="card">
-    <h2>7. Changes</h2>
-    <p>This privacy policy may be updated from time to time. Any changes will be published on this page. Continuing to use the app means that you accept the updated policy.</p>
-  </div>
-
-  <div class="card">
-    <h2>8. Contact</h2>
-    <p>For questions about our privacy policy:</p>
-    <ul>
-      <li>Email: <strong>nurserisidestek@gmail.com</strong></li>
-      <li>Developer: <strong>Mehmet Reşat Raz</strong></li>
+      <li><strong>Support &amp; data deletion:</strong> nurserisidestek@gmail.com</li>
+      <li><strong>Developer:</strong> Mehmet Reşat Raz</li>
+      <li><strong>App:</strong> Secde Pro — Prayer Times, Adhan &amp; Worship Guide</li>
     </ul>
   </div>
 
   <div class="footer">
-    <p>© 2026 Mehmet Reşat Raz — Nur Adhan Times &amp; Prayer</p>
+    <p>© 2026 Mehmet Reşat Raz — Secde Pro</p>
     <p style="margin-top:8px;">All rights reserved.</p>
   </div>
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nur Namaz Programı — Gizlilik Politikası</title>
+  <title>Secde Pro — Gizlilik Politikası</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', sans-serif; background: #f5f5f0; color: #333; }
@@ -13,89 +13,152 @@
     .container { max-width: 800px; margin: 40px auto; padding: 0 20px 60px; }
     .card { background: white; border-radius: 12px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
     h2 { color: #2E7D32; font-size: 18px; margin-bottom: 12px; border-bottom: 2px solid #e8f5e9; padding-bottom: 8px; }
+    h3 { color: #444; font-size: 15px; margin: 14px 0 6px; }
     p, li { font-size: 15px; line-height: 1.7; color: #444; }
-    ul { padding-left: 20px; margin-top: 8px; }
+    ul, ol { padding-left: 20px; margin-top: 8px; }
     li { margin-bottom: 6px; }
     .footer { text-align: center; color: #888; font-size: 13px; margin-top: 40px; }
     .badge { display: inline-block; background: #e8f5e9; color: #2E7D32; padding: 4px 12px; border-radius: 20px; font-size: 13px; margin-top: 8px; }
-    .lang { display: inline-block; margin-top: 12px; color: white; font-size: 13px; text-decoration: underline; opacity: 0.9; }
-    .lang:hover { opacity: 1; }
+    .highlight { background: #e8f5e9; border-left: 4px solid #2E7D32; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-top: 12px; }
+    .highlight strong { color: #2E7D32; }
+    a { color: #2E7D32; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>🕌 Nur Namaz Programı</h1>
-  <p>Gizlilik Politikası</p>
+  <h1>🕌 Secde Pro</h1>
+  <p>Gizlilik Politikası &amp; Aydınlatma Metni</p>
   <span class="badge">Son güncelleme: Ekim 2026</span>
 </header>
 
 <div class="container">
 
   <div class="card">
-    <h2>1. Genel Bilgi</h2>
-    <p>Nur Namaz Programı uygulaması, Mehmet Reşat Raz tarafından geliştirilmiştir. Bu gizlilik politikası, uygulamamızı kullandığınızda hangi bilgilerin toplandığını ve nasıl kullanıldığını açıklamaktadır.</p>
+    <h2>1. Genel Bakış</h2>
+    <p><strong>Secde Pro</strong> (eski adıyla Nur Namaz Programı) uygulaması, Mehmet Reşat Raz tarafından geliştirilmiştir. Bu sayfa, uygulamayı kullandığınızda hangi bilgilerin ele alındığını, neden işlendiğini ve <strong>verilerinizi nasıl silebileceğinizi</strong> açık ve anlaşılır bir dille anlatır.</p>
+    <p style="margin-top:8px;">Uygulamayı kullanmak için hesap açmanız gerekmez; ad, soyad, e-posta veya telefon numarası gibi kimlik bilgileriniz istenmez. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve yürürlükteki diğer gizlilik mevzuatı kapsamında veri sorumlusu geliştiricidir.</p>
   </div>
 
   <div class="card">
-    <h2>2. Toplanan Bilgiler</h2>
-    <p>Uygulamamız aşağıdaki bilgileri kullanır:</p>
+    <h2>2. Toplanan ve İşlenen Bilgiler</h2>
+
+    <h3>a) Konum bilgisi</h3>
+    <p>Namaz vakitleri ve kıble yönü hesaplamak için yalnızca uygulama açıkken konum erişimi kullanılır. Konum koordinatınız doğrudan cihazınızda işlenir; seçtiğiniz şehir veya koordinat, vakit hesaplama hizmetlerine (aşağıda 5. bölüm) yalnızca namaz vakti getirmek amacıyla gönderilir. Bu bilgi sunucularımızda saklanmaz.</p>
+
+    <h3>b) Tercihler ve yerel veriler</h3>
+    <p>Şehir seçiminiz, tema, yazı boyutu, bildirim ve namaz takip tercihleriniz yalnızca cihazınızda saklanır (SharedPreferences). Ana ekran widget'ı ise uygulamanın gösterdiği aynı vakit bilgisini (şehir adı ve vakitler) cihazınızdaki yerel uygulama alanında tutar; internete gönderilmez.</p>
+
+    <h3>c) Bildirim izni</h3>
+    <p>Ezan vakitleri, günün ayeti ve kandil günleri bildirimleri için bildirim izni kullanılır. Bildirimler cihazınızda üretilir; hangi bildirimleri aldığınızı sunucuya raporlamayız.</p>
+
+    <h3>d) Dua İsteme (kullanıcı içeriği)</h3>
+    <p>"Dua İsteme" bölümünden gönüllü olarak gönderdiğiniz dua metni, girdiğiniz kullanıcı adı (isteğinize bağlı olarak "Anonim") ve anonim bir cihaz kimliği; diğer kullanıcılar görebilsin ve "Amin" diyebilsin diye Google Firebase Firestore sunucularında saklanır. Bu içerik sizin açık rızanızla yayımlanır ve istediğinizde silinebilir (bkz. Bölüm 7).</p>
+
+    <h3>e) Çökme raporları</h3>
+    <p>Firebase Crashlytics, uygulama çökmelerini tespit edip düzeltmek için anonim hata raporları toplar (işletim sistemi sürümü, hata kaydı, cihaz modeli gibi teknik bilgiler). Bu raporlar sizinle eşleştirilebilir kişisel veri içermez.</p>
+
+    <h3>f) Reklamlar</h3>
+    <p>Uygulama, reklam geliriyle ücretsiz kalır. Google AdMob reklam göstermek için cihaz ve reklamcılık bilgileri işleyebilir. <strong>Uygulama, reklam takip kimliğini (IDFA) kullanmaz</strong>; gösterilen reklamlar bulunduğunuz içeriğe göre (bağlama dayalı) seçilir. Reklam kişiselleştirme tercihlerinizi iOS Ayarları &gt; Gizlilik &amp; Güvenlik &gt; Takip bölümünden yönetebilirsiniz.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Verilerin Kullanım Amaçları</h2>
+    <p>Toplanan her bilgi yalnızca şu amaçlarla kullanılır:</p>
     <ul>
-      <li><strong>Konum bilgisi:</strong> Namaz vakitleri ve kıble yönü hesaplaması için yalnızca uygulama açıkken konum erişimi kullanılır. Bu bilgi cihazınızda kalır, sunucularımıza gönderilmez.</li>
-      <li><strong>Bildirim izni:</strong> Ezan vakitleri, günün ayeti ve kandil günleri bildirimleri için kullanılır.</li>
-      <li><strong>Yerel depolama:</strong> Şehir seçimi, tema ve ayarlar cihazınızda SharedPreferences ile saklanır.</li>
-      <li><strong>Dua istekleri:</strong> "Dua İsteme" bölümünden gönderdiğiniz dua metni, girdiğiniz kullanıcı adı (isteğinize bağlı olarak "Anonim") ve anonim bir cihaz kimliği; diğer kullanıcılar görebilsin ve "Amin" diyebilsin diye Google Firebase sunucularında saklanır.</li>
+      <li>Namaz vakti, ezan, imsakiye ve kıble hizmetini sunmak</li>
+      <li>Vakit ve içerik bildirimlerini göndermek</li>
+      <li>İsteğinize bağlı olarak dua taleplerinizi diğer kullanıcılarla paylaşmak</li>
+      <li>Uygulama hatalarını tespit edip düzeltmek (çökme raporları)</li>
+      <li>Ücretsiz kullanım için reklam göstermek</li>
     </ul>
+    <p style="margin-top:8px;">Verileriniz bu amaçlar dışında kullanılmaz; satılmaz, kiralanmaz ve rızanız olmadan üçüncü taraflara pazarlama amacıyla aktarılmaz.</p>
   </div>
 
   <div class="card">
-    <h2>3. Toplanmayan Bilgiler</h2>
+    <h2>4. Toplanmayan Bilgiler</h2>
     <p>Uygulamamız aşağıdaki bilgileri <strong>kesinlikle toplamaz:</strong></p>
     <ul>
-      <li>Ad-soyad, e-posta adresi veya telefon numarası gibi kimlik bilgileri</li>
-      <li>Ödeme bilgileri</li>
+      <li>Ad, soyad, e-posta adresi veya telefon numarası gibi kimlik bilgileri</li>
+      <li>Ödeme veya fatura bilgileri (uygulama ücretsizdir, uygulama içi satın alma yoktur)</li>
+      <li>Kesin GPS konumu kayıtları veya konum geçmişi</li>
+      <li>Rehber, galeri, mikrofon veya kamera erişimi</li>
+      <li>Sağlık, dinî üyelik veya biyometrik veriler</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>4. Üçüncü Taraf Hizmetler</h2>
-    <p>Uygulamamız aşağıdaki üçüncü taraf hizmetleri kullanır:</p>
+    <h2>5. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama aşağıdaki dış hizmetleri kullanır; her biri kendi gizlilik politikasına tabidir:</p>
     <ul>
-      <li><strong>Aladhan API:</strong> Namaz vakitleri hesaplaması için. Yalnızca konum koordinatları gönderilir.</li>
-      <li><strong>GitHub (raw.githubusercontent.com):</strong> Uygulama içi içerik (hadis, dua, radyo kanalları) için kullanılır.</li>
-      <li><strong>Google AdMob:</strong> Uygulama içinde gösterilen reklamlar için kullanılır. Uygulama, reklam kimliğini (IDFA) kullanmaz; gösterilen reklamlar bulunduğunuz içeriğe göre seçilir.</li>
-      <li><strong>Firebase Firestore:</strong> "Dua İsteme" özelliği için kullanılır. Gönderdiğiniz dua metni, kullanıcı adınız ve anonim cihaz kimliğiniz burada saklanır ve diğer uygulama kullanıcılarına gösterilir.</li>
-      <li><strong>Firebase Crashlytics:</strong> Uygulama çökmelerini tespit etmek ve düzeltmek için hata raporları toplar.</li>
-      <li><strong>Radyo &amp; TV yayınları:</strong> Canlı yayın için ilgili yayın sunucularına bağlanılır.</li>
+      <li><strong>Aladhan API, Diyanet (awqatsalah.diyanet.gov.tr), imsakiyem.com:</strong> Namaz vakitleri ve imsakiye hesaplaması için; yalnızca şehir/koordinat gönderilir.</li>
+      <li><strong>alquran.cloud:</strong> Kur'an-ı Kerim metinleri, Mushaf sayfaları ve Yasin sure sesleri (okuma) için; yalnızca istenen sure/sayfa numarası gönderilir.</li>
+      <li><strong>Google Firebase Firestore:</strong> "Dua İsteme" özelliği için kullanılır; gönüllü olarak gönderdiğiniz içerik burada saklanır.</li>
+      <li><strong>Google Firebase Crashlytics:</strong> Anonim çökme raporları için kullanılır.</li>
+      <li><strong>Google AdMob:</strong> Reklam gösterimi için kullanılır. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google gizlilik politikası</a>.</li>
+      <li><strong>Google Drive (dosya indirme):</strong> Cüz ve Namaz Duaları bölümlerindeki ses dosyaları indirilir; indirme yalnızca ses dosyası almak içindir.</li>
+      <li><strong>Quran Foundation (verses.quran.foundation):</strong> Mushaf sayfa görselleri için kullanılır.</li>
+      <li><strong>Radyo ve TV yayın sunucuları:</strong> Canlı yayın akışı içindir; yalnızca bağlantı kurulur, izleme kaydı tutulmaz.</li>
+      <li><strong>Apple App Store / Google Play bağlantıları:</strong> Uygulamayı puanlama veya diğer uygulamaları açma içindir.</li>
+    </ul>
+    <p style="margin-top:8px;">Uygulama; GitHub, kendi sunucularımız veya herhangi bir analitik izleme (takip) SDK'sı üzerinden kişisel veri toplamaz.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Saklama Süresi</h2>
+    <ul>
+      <li><strong>Cihazınızdaki veriler</strong> (şehir, tercihler, indirilen ses dosyaları): uygulamayı silene kadar cihazınızda kalır.</li>
+      <li><strong>Dua İsteme içerikleri:</strong> siz silene kadar Firebase Firestore'da saklanır.</li>
+      <li><strong>Çökme raporları:</strong> anonimdir ve Firebase kapsamında en fazla 180 gün tutulur.</li>
+      <li><strong>Reklam bilgileri:</strong> Google'ın kendi politikalarına göre sınırlı süre tutulur.</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>5. Çocukların Gizliliği</h2>
-    <p>Uygulamamız 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz. Uygulama her yaş grubuna uygun içerik sunmaktadır.</p>
+    <h2>7. Verilerinizi Silme ve Haklarınız</h2>
+    <p>Verileriniz üzerinde tam kontrol sizdedir. Silme işlemi için aşağıdaki yolları kullanabilirsiniz:</p>
+    <ol>
+      <li><strong>Tüm yerel verileri silmek için:</strong> iPhone'unuzda uygulama simgesine uzun basıp <em>"Uygulamayı Sil"</em> demeniz yeterlidir. Şehir seçiminiz, tercihleriniz, bildirim ayarlarınız ve indirilen tüm dosyalar cihazınızdan tamamen kalkar.</li>
+      <li><strong>Dua İsteme içeriklerinizi (kullanıcı verisi) silmek için:</strong> aşağıdaki destek e-posta adresine yazın:
+        <div class="highlight">
+          <strong>E-posta:</strong> nurserisidestek@gmail.com<br>
+          Konu: "Veri silme talebi"<br>
+          Lütfen uygulamadaki kullanıcı adınızı ve mümkünse gönderdiğiniz dua metninin ilk birkaç kelimesini belirtin.
+        </div>
+        Talebiniz doğrulandıktan sonra içeriğiniz <strong>en geç 30 gün içinde</strong> silinir; işlem tamamlandığında size e-posta ile geri dönüş yapılır. Bu hizmet ücretsizdir.
+      </li>
+      <li><strong>KVKK kapsamındaki diğer haklarınız</strong> (bilgi alma, düzeltme, itiraz, kısıtlama talebi): aynı e-posta adresine iletebilirsiniz; en geç 30 gün içinde sonuçlandırılır.</li>
+      <li><strong>Reklam takibi:</strong> IDFA kullanılmadığı için ek bir izin gerekmez; yine de iOS Ayarları &gt; Gizlilik &amp; Güvenlik &gt; Takip bölümünden uygulamalar arası takibi sıfırlayabilirsiniz.</li>
+    </ol>
   </div>
 
   <div class="card">
-    <h2>6. Güvenlik</h2>
-    <p>Ayarlarınız, şehir seçiminiz ve namaz takip bilgileriniz yalnızca cihazınızda saklanır ve üçüncü taraflarla paylaşılmaz. Kendi isteğinizle gönderdiğiniz dua talepleri ise, diğer kullanıcılar görebilsin diye Google Firebase sunucularında tutulur. Çökme raporları yalnızca hataları tespit edip düzeltmek amacıyla Firebase Crashlytics'e gönderilir. Uygulama internet bağlantısını namaz vakitleri, içerik güncellemeleri, dua istekleri ve canlı yayınlar için kullanır.</p>
+    <h2>8. Çocukların Gizliliği</h2>
+    <p>Uygulamamız 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz. Uygulama her yaş grubuna uygun, reklam destekli ibadet ve eğitim içeriği sunmaktadır. Bir çocuğun sizin haberiniz olmadan kişisel veri paylaştığını düşünüyorsanız, e-posta yoluyla bize bildirin; derhal silelim.</p>
   </div>
 
   <div class="card">
-    <h2>7. Değişiklikler</h2>
-    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayınlanacaktır. Uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+    <h2>9. Güvenlik</h2>
+    <p>Ayarlarınız, şehir seçiminiz ve namaz takip bilgileriniz yalnızca cihazınızda saklanır ve üçüncü taraflarla paylaşılmaz. Gönderdiğiniz dua talepleri yalnızca uygulama içinde yayımlanmak üzere Firebase'e aktarılır ve bağlantılar TLS ile şifrelenir. Çökme raporları yalnızca hataları tespit etmek amacıyla gönderilir. Uygulama internet bağlantısını namaz vakitleri, Kur'an metinleri ve sesleri, içerik güncellemeleri, dua istekleri ve canlı yayınlar için kullanır.</p>
   </div>
 
   <div class="card">
-    <h2>8. İletişim</h2>
-    <p>Gizlilik politikamız hakkında sorularınız için:</p>
+    <h2>10. Değişiklikler</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler bu sayfada yayımlanır ve sayfanın üstündeki "Son güncelleme" tarihi güncellenir. Uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+  </div>
+
+  <div class="card">
+    <h2>11. İletişim</h2>
+    <p>Gizlilik soruları, <strong>veri silme talepleri</strong> ve önerileriniz için:</p>
     <ul>
-      <li>E-posta: <strong>nurserisidestek@gmail.com</strong></li>
-      <li>Geliştirici: <strong>Mehmet Reşat Raz</strong></li>
+      <li><strong>Destek ve veri silme:</strong> nurserisidestek@gmail.com</li>
+      <li><strong>Geliştirici:</strong> Mehmet Reşat Raz</li>
+      <li><strong>Uygulama:</strong> Secde Pro — Namaz Vakitleri, Ezan ve İbadet Rehberi</li>
     </ul>
   </div>
 
   <div class="footer">
-    <p>© 2026 Mehmet Reşat Raz — Nur Namaz Programı</p>
+    <p>© 2026 Mehmet Reşat Raz — Secde Pro</p>
     <p style="margin-top:8px;">Tüm hakları saklıdır.</p>
   </div>
 

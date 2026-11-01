@@ -53,7 +53,7 @@
     <p>Ezan vakitleri, günün ayeti ve kandil günleri bildirimleri için bildirim izni kullanılır. Bildirimler cihazınızda üretilir; hangi bildirimleri aldığınızı sunucuya raporlamayız.</p>
 
     <h3>d) Dua İsteme (kullanıcı içeriği)</h3>
-    <p>"Dua İsteme" bölümünden gönüllü olarak gönderdiğiniz dua metni, girdiğiniz kullanıcı adı (isteğinize bağlı olarak "Anonim") ve anonim bir cihaz kimliği; diğer kullanıcılar görebilsin ve "Amin" diyebilsin diye Google Firebase Firestore sunucularında saklanır. Bu içerik sizin açık rızanızla yayımlanır ve istediğinizde silinebilir (bkz. Bölüm 7).</p>
+    <p>"Dua İsteme" bölümünden gönüllü olarak gönderdiğiniz dua metni, girdiğiniz kullanıcı adı (isteğinize bağlı olarak "Anonim") ve Google Firebase'in sizin adınıza oluşturduğu <strong>anonim bir kimlik numarası</strong> (e-posta, telefon veya şifre gerektirmeyen, hiçbir kişisel bilgiye bağlanmayan bir tanımlayıcı); diğer kullanıcılar görebilsin ve "Amin" diyebilsin diye Google Firebase Firestore sunucularında saklanır. Bu anonim kimlik, yalnızca kendi gönderdiğiniz duayı uygulama içinden silebilmeniz için kullanılır. Başka hiçbir veriyle ilişkilendirilmez ve kullanım dışı kaldığında 30 gün sonra Firebase tarafından otomatik silinir. Bu içerik sizin açık rızanızla yayımlanır ve istediğinizde silinebilir (bkz. Bölüm 7).</p>
 
     <h3>e) Çökme raporları</h3>
     <p>Firebase Crashlytics, uygulama çökmelerini tespit edip düzeltmek için anonim hata raporları toplar (işletim sistemi sürümü, hata kaydı, cihaz modeli gibi teknik bilgiler). Bu raporlar sizinle eşleştirilebilir kişisel veri içermez.</p>
@@ -96,6 +96,7 @@
       <li><strong>QUD Ses Kütüphanesi (GitHub — mp3quran, tarteel, quranicaudio CDN'leri):</strong> Yasin ve Namaz Sureleri bölümlerindeki sure sesleri internetten akar; hafız başına ~5 MB zamanlama paketi bir kez iner ve cihazda önbellek olarak saklanır.</li>
       <li><strong>archive.org:</strong> Cüz dinleme özelliği için 30 cüzün ses dosyaları bu kurumsal arşivden akar; hiçbir dosya indirilmez.</li>
       <li><strong>Google Firebase Firestore:</strong> "Dua İsteme" özelliği için kullanılır; gönüllü olarak gönderdiğiniz içerik burada saklanır.</li>
+      <li><strong>Google Firebase Authentication (anonim oturum):</strong> "Dua İsteme" için iç kimlik üretiminde kullanılır; e-posta/şifre girmeden, hiçbir kişisel bilgi işlenmeden çalışır.</li>
       <li><strong>Google Firebase Crashlytics:</strong> Anonim çökme raporları için kullanılır.</li>
       <li><strong>Google AdMob:</strong> Reklam gösterimi için kullanılır. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google gizlilik politikası</a>.</li>
       <li><strong>Quran Foundation (verses.quran.foundation):</strong> Mushaf sayfa görselleri için kullanılır.</li>

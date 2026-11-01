@@ -53,7 +53,7 @@
     <p>Used for adhan-time reminders, daily verse, and religious holiday notifications. Notifications are produced on your device; we do not report which notifications you receive.</p>
 
     <h3>d) Prayer Request feature (user-generated content)</h3>
-    <p>If you voluntarily submit a prayer request, the text, the username you choose (optionally "Anonymous"), and an anonymous device identifier are stored in Google Firebase Firestore so other users can view it and say "Amen." This content is published with your consent and can be deleted at any time (see Section 7).</p>
+    <p>If you voluntarily submit a prayer request, the text, the username you choose (optionally "Anonymous"), and an <strong>anonymous identifier</strong> created for you by Google Firebase (an identifier that requires no e-mail, phone number, or password and is not linked to any personal information) are stored in Google Firebase Firestore so other users can view it and say "Amen." This anonymous identifier is used solely so you can delete your own prayer request from within the app. It is not associated with any other data and is automatically deleted by Firebase after 30 days of inactivity. This content is published with your consent and can be deleted at any time (see Section 7).</p>
 
     <h3>e) Crash reports</h3>
     <p>Firebase Crashlytics collects anonymous crash reports (OS version, error logs, device model, and similar technical details) to detect and fix bugs. These reports contain no personally identifiable information linked to you.</p>
@@ -95,6 +95,7 @@
       <li><strong>QUD Audio Library (GitHub — mp3quran, tarteel, quranicaudio CDNs):</strong> Surah audio in the Yasin and Prayer Surahs sections streams over the internet; a ~5 MB timing package per reciter is downloaded once and cached on the device.</li>
       <li><strong>archive.org:</strong> The Juz listening feature streams its 30 juz audio files from this institutional archive; no files are downloaded.</li>
       <li><strong>Google Firebase Firestore:</strong> Stores the content you voluntarily submit to the Prayer Request feature.</li>
+      <li><strong>Google Firebase Authentication (anonymous sign-in):</strong> Used to create an internal identifier for the Prayer Request feature; works without any e-mail/password entry and processes no personal information.</li>
       <li><strong>Google Firebase Crashlytics:</strong> Anonymous crash reports.</li>
       <li><strong>Google AdMob:</strong> Ad delivery. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
       <li><strong>Quran Foundation (verses.quran.foundation):</strong> Mushaf page images.</li>
